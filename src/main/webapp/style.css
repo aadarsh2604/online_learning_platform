@@ -1,0 +1,101 @@
+@charset "ISO-8859-1";
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+body
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background-image: url(images/background2.jpg);
+    background-size: cover;
+    font-family:monospace;
+    font-size: 16px;
+}
+.form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; /* Center vertically */
+    border: 2px solid #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    backdrop-filter: blur(15px);
+    width: 300px;
+    height: 300px;
+    margin: auto; /* Center horizontally */
+    margin-top: 100px; /* Adjust as needed for spacing */
+}
+
+.form-container h1 
+{
+    margin-bottom: 15px;
+    font-family:monospace;
+    font-size: 1.5em;
+}
+
+.form-container .username-input
+{
+    background-image: url(images/username.png);
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: 12px;
+}
+
+.form-container .email-input
+{
+    background-image: url(images/email.png);
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: 12px;
+}
+
+.form-container .password-input
+{
+    background-image: url(images/password.png);
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: 12px;
+}
+
+.form-container input {
+    margin: 5px;
+    border: none;
+    border-bottom: 2px solid #000000;
+    outline: none;
+    background: transparent;
+    font-family:monospace;
+    font-size: 1em;
+    padding: 10px;
+}
+
+.form-container input::placeholder 
+{
+    color: black;
+}
+
+.form-container button
+{
+    margin: 20px;
+    border: 1px solid white;
+    outline: none;
+    background: transparent;
+    color: #000000;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family:monospace;
+    font-size: 1em;
+}
+.form-container button:hover
+{
+    border: 1px solid black;
+    outline: none;
+    background: #000000;
+    color: #ffffff;
+}
+.form-container .label.active {
+    transform: translateY(-20px);
+    font-size: 0.8em;
+    color: #000000;
+}
